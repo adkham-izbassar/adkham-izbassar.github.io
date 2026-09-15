@@ -9,90 +9,124 @@
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      background: #ffffff;
-      color: #222;
-      line-height: 1.6;
+      background: #f4f1ea;
+      color: #222222;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 780px;
       margin: 0 auto;
-      padding: 50px 25px;
-    }
-
-    .intro {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 50px;
-    }
-
-    .intro-text {
-      flex: 1;
-    }
-
-    .profile-photo {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 6px;
+      padding: 70px 28px 100px;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 42px;
+      font-weight: 500;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.5px;
     }
 
     h2 {
-      margin-top: 45px;
-      font-size: 26px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 55px;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 19px;
+      font-weight: 600;
+      margin-bottom: 5px;
     }
 
     p {
       font-size: 17px;
+      margin: 0 0 18px 0;
     }
 
     a {
-      color: #0066cc;
+      color: #4a5f73;
       text-decoration: none;
+      border-bottom: 1px solid #b8b2a8;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #000000;
+      border-bottom-color: #000000;
+    }
+
+    .intro {
+      margin-bottom: 35px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 24px;
     }
 
     .links {
-      margin-top: 20px;
+      margin-top: 24px;
+      font-size: 16px;
     }
 
     .links a {
       margin-right: 14px;
     }
 
-    .news-item {
+    .section-item {
+      margin-bottom: 24px;
+    }
+
+    .date {
+      color: #777;
+      font-size: 15px;
+    }
+
+    .research-title {
+      margin-bottom: 3px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
       margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .footer {
+      margin-top: 70px;
+      padding-top: 25px;
+      border-top: 1px solid #d8d3c8;
+      font-size: 14px;
+      color: #777;
     }
 
     @media (max-width: 700px) {
-      .intro {
-        flex-direction: column-reverse;
-        text-align: center;
-      }
-
-      .profile-photo {
-        width: 180px;
-        height: 180px;
-      }
-
       .container {
-        padding: 30px 20px;
+        padding: 45px 22px 70px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        font-size: 16px;
       }
     }
   </style>
+
 </head>
 
 <body>
@@ -101,37 +135,31 @@
 
   <div class="intro">
 
-    <div class="intro-text">
+    <h1>Adkham Izbassar</h1>
 
-      <h1>Adkham Izbassar</h1>
-
-      <p>
-        I am an M.S. student in Petroleum Engineering at
-        Texas Tech University. My research focuses on geologic hydrogen,
-        electromagnetic reservoir stimulation, subsurface energy systems,
-        and experimental petroleum engineering.
-      </p>
-
-      <p>
-        I am particularly interested in natural and stimulated hydrogen
-        generation, electromagnetic interactions with reservoir rocks,
-        and the development of new technologies for subsurface energy systems.
-      </p>
-
-      <div class="links">
-        <a href="mailto:YOUR_EMAIL">Email</a>
-        <a href="YOUR_LINKEDIN">LinkedIn</a>
-        <a href="#">CV</a>
-        <a href="#">Google Scholar</a>
-      </div>
-
+    <div class="subtitle">
+      Petroleum Engineering · Subsurface Energy · Geologic Hydrogen
     </div>
 
-    <div>
-      <img
-        src="images/profile.jpg"
-        alt="Adkham Izbassar"
-        class="profile-photo">
+    <p>
+      I am an M.S. student in Petroleum Engineering at Texas Tech University.
+      My research focuses on geologic hydrogen, electromagnetic interactions
+      with reservoir rocks, subsurface energy systems, and experimental
+      petroleum engineering.
+    </p>
+
+    <p>
+      I am particularly interested in understanding natural and stimulated
+      hydrogen generation in geological systems and developing technologies
+      that can translate subsurface energy research into practical applications.
+    </p>
+
+    <div class="links">
+      <a href="mailto:YOUR_EMAIL">Email</a>
+      <a href="YOUR_LINKEDIN">LinkedIn</a>
+      <a href="#">Google Scholar</a>
+      <a href="#">CV</a>
+      <a href="https://github.com/adkham786">GitHub</a>
     </div>
 
   </div>
@@ -140,74 +168,129 @@
   <h2>Research Interests</h2>
 
   <p>
-    Geologic hydrogen • Electromagnetic reservoir stimulation •
-    Enhanced oil recovery • Subsurface energy systems •
-    Multiphase flow • Hydrogen production
+    Geologic hydrogen · Electromagnetic reservoir stimulation ·
+    In-situ hydrogen generation · Enhanced oil recovery ·
+    Multiphase flow · Subsurface energy systems
   </p>
 
 
   <h2>News</h2>
 
-  <div class="news-item">
-    <strong>2026</strong> — Research accepted for presentation at SPE ATCE.
+  <div class="section-item">
+    <span class="date">2026</span><br>
+    Research accepted for presentation at SPE ATCE on electromagnetic
+    penetration depth in reservoir rocks.
   </div>
 
-  <div class="news-item">
-    <strong>2026</strong> — Presenting research on the geologic hydrogen
-    potential of Kazakhstan at the Geologic Hydrogen Gordon Research Conference.
+  <div class="section-item">
+    <span class="date">2026</span><br>
+    Presenting research on the geologic hydrogen potential of Kazakhstan
+    at the Geologic Hydrogen Gordon Research Conference.
   </div>
 
-  <div class="news-item">
-    <strong>2026</strong> — Presented transparent pipeline research at SWPSC.
+  <div class="section-item">
+    <span class="date">2026</span><br>
+    Presented transparent pipeline research at the Southwestern Petroleum
+    Short Course.
   </div>
 
 
   <h2>Research</h2>
 
-  <h3>Geologic Hydrogen</h3>
+  <div class="section-item">
+    <h3 class="research-title">Geologic Hydrogen</h3>
 
-  <p>
-    Research focused on identifying and evaluating natural hydrogen systems,
-    including hydrogen generation associated with ultramafic rocks,
-    water-rock interactions, radiolysis, and subsurface geological structures.
-  </p>
-
-
-  <h3>Electromagnetic Reservoir Stimulation</h3>
-
-  <p>
-    Experimental investigation of electromagnetic penetration depth and
-    dielectric behavior of reservoir rocks under varying pressure,
-    temperature, fluid saturation, and acoustic conditions.
-  </p>
+    <p>
+      Investigation of natural hydrogen systems in Kazakhstan and West Texas,
+      including hydrogen generation associated with ultramafic rocks,
+      water-rock reactions, radiolysis, geological structures, and
+      subsurface migration pathways.
+    </p>
+  </div>
 
 
-  <h3>Multiphase Flow and Pipeline Research</h3>
+  <div class="section-item">
+    <h3 class="research-title">Electromagnetic Reservoir Stimulation</h3>
 
-  <p>
-    Experimental research involving transparent thermoplastic pipeline
-    systems for visualization and characterization of multiphase flow.
-  </p>
+    <p>
+      Experimental investigation of dielectric properties and electromagnetic
+      penetration depth in reservoir rocks under pressure, temperature,
+      fluid saturation, and acoustic stimulation.
+    </p>
+  </div>
 
 
-  <h2>Publications & Presentations</h2>
+  <div class="section-item">
+    <h3 class="research-title">Multiphase Flow and Pipeline Systems</h3>
 
-  <p>
-    Publications and conference presentations will be added here.
-  </p>
+    <p>
+      Experimental testing of transparent thermoplastic pipeline materials
+      for multiphase-flow visualization, including static pressure,
+      cyclic loading, and failure characterization.
+    </p>
+  </div>
+
+
+  <h2>Publications</h2>
+
+  <div class="section-item">
+    <strong>Electromagnetic Penetration in Reservoir Rocks</strong><br>
+    A. Izbassar et al.<br>
+    Manuscript in preparation.
+  </div>
+
+  <div class="section-item">
+    <strong>Transparent Thermoplastic Pipeline Systems for Multiphase Flow</strong><br>
+    A. Izbassar et al.<br>
+    Journal manuscript in preparation.
+  </div>
+
+
+  <h2>Selected Presentations</h2>
+
+  <div class="section-item">
+    <strong>SPE Annual Technical Conference and Exhibition</strong><br>
+    Electromagnetic penetration depth in reservoir rocks.<br>
+    <span class="date">2026</span>
+  </div>
+
+  <div class="section-item">
+    <strong>Geologic Hydrogen Gordon Research Conference</strong><br>
+    Geologic hydrogen potential of Kazakhstan.<br>
+    <span class="date">2026</span>
+  </div>
+
+  <div class="section-item">
+    <strong>Southwestern Petroleum Short Course</strong><br>
+    Design and testing of transparent pipeline systems.<br>
+    <span class="date">2026</span>
+  </div>
 
 
   <h2>Education</h2>
 
-  <p>
-    <strong>M.S. Petroleum Engineering</strong><br>
-    Texas Tech University
-  </p>
+  <div class="section-item">
+    <strong>Texas Tech University</strong><br>
+    M.S. Petroleum Engineering
+  </div>
 
-  <p>
-    <strong>B.S. Mechanical Engineering</strong><br>
+  <div class="section-item">
+    <strong>Texas Tech University</strong><br>
+    B.S. Mechanical Engineering
+  </div>
+
+
+  <h2>Experience</h2>
+
+  <div class="section-item">
+    <strong>Graduate Research Assistant</strong><br>
     Texas Tech University
-  </p>
+  </div>
+
+  <div class="section-item">
+    <strong>Undergraduate Researcher</strong><br>
+    Texas Tech University
+  </div>
 
 
   <h2>Contact</h2>
@@ -216,6 +299,11 @@
     Email:
     <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
   </p>
+
+
+  <div class="footer">
+    © 2026 Adkham Izbassar
+  </div>
 
 </div>
 
