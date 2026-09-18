@@ -166,10 +166,30 @@
       object-position: center;
     }
 
+    .photo-grid img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .renewable-grid img,
     .cycle-figures img {
       width: 100%;
-      height: auto;
+      aspect-ratio: 4 / 3;
       object-fit: contain;
+      background: #ffffff;
+    }
+
+    .updates-figure {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .updates-figure img {
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #ffffff;
     }
 
     .em-figure {
@@ -180,8 +200,18 @@
 
     .em-figure img {
       width: 100%;
-      height: auto;
+      aspect-ratio: 5 / 3;
       object-fit: contain;
+      background: #ffffff;
+    }
+
+    .publication-list {
+      margin: 10px 0 30px;
+    }
+
+    .publication-list li {
+      margin-bottom: 16px;
+      padding-left: 4px;
     }
 
     .footer {
@@ -200,7 +230,7 @@
       h2 { font-size: 22px; margin-top: 48px; }
       p, li { font-size: 16px; }
       .figure-grid, .figure-grid.three { grid-template-columns: 1fr; }
-      .em-figure img { height: auto; object-fit: initial; }
+      .em-figure img, .renewable-grid img, .cycle-figures img { height: auto; object-fit: contain; }
     }
   </style>
 </head>
@@ -215,10 +245,11 @@
       </p>
 
       <p>
-        I am particularly interested in understanding natural and stimulated hydrogen generation in geological systems and in developing technologies that can translate subsurface energy research into practical applications.
+        I am particularly interested in understanding natural and stimulated hydrogen generation in geological systems and in developing technologies that can translate subsurface energy research into practical industrial applications.
       </p>
 
       <p class="email-line"><strong>Email:</strong> <a href="mailto:adkham786@gmail.com">adkham786@gmail.com</a></p>
+      <p class="email-line"><strong>Phone:</strong> <a href="tel:+12513884132">+1 (251) 388-4132</a></p>
 
       <div class="links">
         <a href="mailto:adkham786@gmail.com">Email</a>
@@ -238,16 +269,21 @@
   <h2>Latest Updates</h2>
   <div class="section-item">
     <span class="date">2026</span><br>
-    Research accepted for presentation at the SPE Annual Technical Conference and Exhibition on electromagnetic penetration depth in reservoir rocks.
+    Research accepted for presentation at the Society of Petroleum Engineers Annual Technical Conference and Exhibition (SPE ATCE 2026): “Enhancing Electromagnetic Penetration Depth in Reservoir Rocks: Characterizing Acoustic, Thermal, and Frequency Effects.”
   </div>
   <div class="section-item">
     <span class="date">2026</span><br>
-    Presenting research on the geologic hydrogen potential of Kazakhstan at the Geologic Hydrogen Gordon Research Conference.
+    Presented preliminary studies on geological hydrogen generation through radiolysis and the chromite-mine degassing potential of Kazakhstan at the inaugural Gordon Research Conference on Geologic Hydrogen.
   </div>
   <div class="section-item">
-    <span class="date">2026</span><br>
-    Presented transparent pipeline research at the Southwestern Petroleum Short Course.
+    <span class="date">April 2026</span><br>
+    Delivered a presentation on production handling and multiphase flow, “Design of a Transparent Pipeline System for Controlled Laboratory Flow Experiments,” at the Southwestern Petroleum Short Course.
   </div>
+
+  <figure class="single-figure updates-figure">
+    <img src="images/swpscPresentation2026.png" alt="Southwestern Petroleum Short Course 2026 presentation cover">
+    <figcaption>Presentation delivered at the Southwestern Petroleum Short Course in April 2026.</figcaption>
+  </figure>
 
   <h2>Research</h2>
 
@@ -262,7 +298,7 @@
       <li>Integration of field observations with laboratory and geologic interpretation to identify follow-up sampling and characterization targets.</li>
     </ul>
 
-    <div class="figure-grid">
+    <div class="figure-grid photo-grid">
       <figure>
         <img src="images/soilGasMeas.jpg" alt="Soil gas field measurements in West Texas" onerror="this.parentElement.style.display='none'">
         <figcaption>Soil-gas hydrogen measurements during field work in West Texas.</figcaption>
@@ -309,7 +345,7 @@
       <li>Design and installation of transparent pipeline sections for field-scale multiphase-flow visualization.</li>
     </ul>
 
-    <div class="figure-grid three">
+    <div class="figure-grid three photo-grid">
       <figure>
         <img src="images/tPipeTesting.jpg" alt="Transparent pipeline test section" onerror="this.parentElement.style.display='none'">
         <figcaption>Internal view of a transparent pipeline test section prepared for multiphase-flow visualization.</figcaption>
@@ -332,13 +368,13 @@
     <p>
       Worked with graduate students in Electrical and Computer Engineering on a renewable-energy system combining wind and solar generation, battery storage, and maximum power point tracking. The work included system assembly, circuit-level testing, and modeling of power-electronics behavior.
     </p>
-    <div class="figure-grid">
+    <div class="figure-grid renewable-grid">
       <figure>
         <img src="images/renewProject.JPG" alt="Renewable energy project team with wind turbine system" onerror="this.parentElement.style.display='none'">
         <figcaption>Renewable-energy project work with the wind-generation system and research team.</figcaption>
       </figure>
       <figure>
-        <img src="images/renewProject2.JPG" alt="Wind and solar renewable energy system" onerror="this.parentElement.style.display='none'">
+        <img src="images/renewableSystemCropped.png" alt="Integrated wind, solar, and battery renewable-energy system">
         <figcaption>Integrated wind, solar, and battery system used for renewable-energy and MPPT development.</figcaption>
       </figure>
     </div>
@@ -367,33 +403,17 @@
   </div>
 
   <h2>Publications</h2>
-  <div class="section-item">
-    <strong>Electromagnetic Penetration in Reservoir Rocks</strong><br>
-    A. Izbassar et al.<br>
-    Manuscript in preparation.
-  </div>
-  <div class="section-item">
-    <strong>Transparent Thermoplastic Pipeline Systems for Multiphase Flow</strong><br>
-    A. Izbassar et al.<br>
-    Journal manuscript in preparation.
-  </div>
+  <ul class="publication-list">
+    <li>Izbassar, A., Kyei, M., Dean, J., Varela, V. G., Li, C., Liu, J., and Yuan, Q. “Enhancing Electromagnetic Penetration Depth in Reservoir Rocks: Characterizing Acoustic, Thermal, and Frequency Effects.” <em>Fuel</em>, manuscript submitted and under review, 2026.</li>
+    <li>Izbassar, A., Meneses, A., and Leggett, S. “Experimental Evaluation of Burst Pressure and Cyclic Fatigue in Transparent Thermoplastic Pipelines for Multiphase Flow Applications.” <em>Polymer Testing</em>, manuscript in preparation, 2026.</li>
+  </ul>
 
   <h2>Selected Presentations</h2>
-  <div class="section-item">
-    <strong>SPE Annual Technical Conference and Exhibition</strong><br>
-    Electromagnetic penetration depth in reservoir rocks.<br>
-    <span class="date">2026</span>
-  </div>
-  <div class="section-item">
-    <strong>Geologic Hydrogen Gordon Research Conference</strong><br>
-    Geologic hydrogen potential of Kazakhstan.<br>
-    <span class="date">2026</span>
-  </div>
-  <div class="section-item">
-    <strong>Southwestern Petroleum Short Course</strong><br>
-    Design and testing of transparent pipeline systems.<br>
-    <span class="date">2026</span>
-  </div>
+  <ul class="publication-list">
+    <li>Izbassar, A., Kyei, M., Dean, J., Varela, V. G., Li, C., Liu, J., and Yuan, Q. “Enhancing Electromagnetic Penetration Depth in Reservoir Rocks: Characterizing Acoustic, Thermal, and Frequency Effects.” Society of Petroleum Engineers Annual Technical Conference and Exhibition (SPE ATCE), Houston, Texas, 2026. Accepted for presentation.</li>
+    <li>Izbassar, A. “Design of a Transparent Pipeline System for Controlled Laboratory Flow Experiments.” <em>Proceedings of the Southwestern Petroleum Short Course</em>, Production Handling, Paper 2026065, 2026.</li>
+    <li>Izbassar, A., Maiga, O., and Yuan, Q. “Unlocking the Natural Hydrogen Potential of Kazakhstan: Evidence from Serpentinization, Radiolysis, and Surface Indicators.” Gordon Research Conference on Geologic Hydrogen, Newry, Maine, 2026. Poster presentation.</li>
+  </ul>
 
   <h2>Education</h2>
   <div class="section-item">
@@ -408,6 +428,7 @@
   <h2>Contact</h2>
   <p>
     <a href="mailto:adkham786@gmail.com">adkham786@gmail.com</a><br>
+    <a href="tel:+12513884132">+1 (251) 388-4132</a><br>
     <a href="https://www.linkedin.com/in/aizbassa/" target="_blank" rel="noopener">LinkedIn</a> ·
     <a href="https://www.thehopegroup.tech/" target="_blank" rel="noopener">HOPE Research Group</a>
   </p>
